@@ -1,0 +1,168 @@
+
+
+<nav id="navbar" class="z-[100] px-2 sm:px-4 py-2.5 fixed w-full">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <a href="/" class="flex items-center">
+        <img src="/img/logo.svg" alt="Logo" class="md:h-14 h-10">
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" id="menuToggleBtn"
+    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+    aria-controls="navbar-default" aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+  
+    <!-- Hamburger icon (default visible) -->
+    <svg id="iconMenu" class="w-6 h-6 block" fill="currentColor" viewBox="0 0 20 20">
+      <path fill-rule="evenodd"
+        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+        clip-rule="evenodd"></path>
+    </svg>
+  
+    <!-- Close icon (default hidden) -->
+    <svg id="iconClose" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20">
+      <path fill-rule="evenodd"
+        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+        clip-rule="evenodd"></path>
+    </svg>
+  </button>
+  
+    <div class="hidden font-heading bg-white rounded-lg border lg:border-0 border-gray-100 shadow-md min-h-screen w-64 md:w-96 lg:min-h-auto lg:shadow-none lg:bg-transparent lg:block lg:w-auto absolute lg:relative top-0 lg:top-0 left-0" id="navbar-default">
+      <a href="/" class="flex items-center justify-center pt-10 pb-5 lg:hidden">
+        <img src="/img/logo.svg" alt="Logo" class="h-14">
+      </a>
+      <ul class="flex flex-col p-4 lg:flex-row lg:space-x-5 lg:mt-0 lg:font-medium  ">
+        <li class="px-3 py-2 lg:p-0">
+          <a href="/#home" class="inline-block hover:text-kif-green page-scroll" aria-current="page">Home</a>
+        </li>
+
+        <li class="relative px-3 py-2 lg:p-0 group">
+          <div id="kifTrigger1" class="flex items-center gap-1 cursor-pointer group-hover:text-kif-green">
+            <span>Know More</span>
+            <svg class="w-4 h-4 transition-transform duration-200 transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.655a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        
+          <div id="kifDropdown1" class="hidden group-hover:block absolute left-0 pt-4 z-[200]">
+            <div class="bg-white shadow-xl py-2 border border-gray-100 rounded-md min-w-[300px]">
+              <ul>
+                <li><a href="/#about" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">About</a></li>
+                <li><a href="/#programs" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">Programs</a></li>
+                <li><a href="/#agenda" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">Schedule</a></li>
+                <li><a href="/#speakers" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">Speakers</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- <li class="px-3 py-2 lg:p-0">
+          <a href="/#about" class="inline-block hover:text-kif-green page-scroll" aria-current="page">About</a>
+        </li> -->
+
+        <!-- <li class="px-3 py-2 lg:p-0">
+          <a href="/#programs" class="inline-block hover:text-kif-green page-scroll" aria-current="page">Programs</a>
+        </li> -->
+        
+        <!-- <li class="px-3 py-2 lg:p-0">
+          <a href="/#agenda" class="inline-block hover:text-kif-green page-scroll" aria-current="page">Schedule</a>
+        </li>
+
+        <li class="px-3 py-2 lg:p-0">
+          <a href="/#speakers" class="inline-block hover:text-kif-green page-scroll" aria-current="page">Speakers</a>
+        </li> -->
+        
+        <!-- <li class="px-3 py-2 lg:p-0">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd71M7wL52gRT98vITkmyzSDV2bAb69S7-wHyp0fgHoQIFsEQ/viewform" target="_blank" class="inline-block hover:text-kif-green" aria-current="page">Apply - Super 30</a>
+        </li>
+        <li class="px-3 py-2 lg:p-0">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvhe6U2STKN_M4oBfBkX_HvyyclYxgaYhlvw_Bc4A3uzf7bg/viewform" target="_blank" class="inline-block hover:text-kif-green" aria-current="page">Mascot Design Challenge</a>
+        </li> -->
+
+       
+        
+       
+        <li class="relative px-3 py-2 lg:p-0 group">
+          <div id="kifTrigger" class="flex items-center gap-1 cursor-pointer group-hover:text-kif-green">
+            <span>Become Part of KIF</span>
+            <svg class="w-4 h-4 transition-transform duration-200 transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.655a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        
+          <div id="kifDropdown" class="hidden group-hover:block absolute left-0 pt-4 z-[200]">
+            <div class="bg-white shadow-xl py-2 border border-gray-100 rounded-md min-w-[300px]">
+              <ul>
+                <li><a href="/BioFEST" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">BioFEST</a></li>
+                <li><a href="/SheLeads" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">She Leads</a></li>
+                <li><a href="https://tinkerfest.ceikerala.in/" target="_blank"  class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">Tinkerfest</a></li>
+                <li><a href="https://fabfest.innovationfestival.in/" target="_blank"  class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">Fabfest</a></li>
+                <li><a href="/MIND"  class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">M.I.N.D</a></li>
+                <li><a href="/MVPStudio"  class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">MVP Studio</a></li>
+                <li><a href="/WEPitchtoWEStart" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">WE Pitch to WE Start</a></li>
+                <li><a href="/HackGenAI" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">HackGenAI 2025</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd71M7wL52gRT98vITkmyzSDV2bAb69S7-wHyp0fgHoQIFsEQ/viewform" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">Apply - Super 30</a></li>
+                <!-- <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdvhe6U2STKN_M4oBfBkX_HvyyclYxgaYhlvw_Bc4A3uzf7bg/viewform" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">Mascot Design Challenge</a></li> -->
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSff77hObI39fscJPVKiTKxzroS49qe1nlC79f2qhHpwEIjfwA/viewform" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:text-kif-green">Product Expo</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        
+
+        <li class="px-3 py-2 lg:p-0">
+          <a href="https://tickets.startupmission.in/kerala-innovation-festival" target="_blank" class="btn-register px-4 py-1 text-xl  border-2 border-[#4c9f38] font-bold rounded-md uppercase" href="/#">Register</a>
+        </li>
+
+        <li class="px-3 py-2 lg:p-0">
+          <a href="https://tickets.startupmission.in/kif-fab-workshops" target="_blank" class="btn-register px-4 py-1 text-xl  border-2 border-[#4c9f38] font-bold rounded-md uppercase" href="/#">Fab Fest</a>
+        </li>
+
+        <li class="px-3 py-2 lg:p-0">
+          <a href="/makerfest" target="_blank" class="btn-register px-4 py-1 text-xl  border-2 border-[#4c9f38] font-bold rounded-md uppercase" href="/#">Maker Fest</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script is:inline>
+  const button = document.querySelector('[data-collapse-toggle="navbar-default"]');
+  const target = document.getElementById(button?.getAttribute('data-collapse-toggle'));
+  const iconMenu = document.getElementById("iconMenu");
+  const iconClose = document.getElementById("iconClose");
+
+  button?.addEventListener('click', function () {
+    target?.classList.toggle('hidden');
+
+    // Toggle icons
+    const isOpen = !target?.classList.contains('hidden');
+    iconMenu?.classList.toggle('hidden', isOpen);
+    iconClose?.classList.toggle('hidden', !isOpen);
+  });
+
+  // Sticky navbar on scroll
+  window.addEventListener('scroll', function () {
+    const element = document.querySelector('#navbar');
+    if (window.scrollY > 100) {
+      element?.classList.add('bg-white', 'shadow');
+    } else {
+      element?.classList.remove('bg-white', 'shadow');
+    }
+  });
+
+  // Dropdown for mobile
+  const trigger = document.getElementById('kifTrigger');
+  const dropdown = document.getElementById('kifDropdown');
+
+  trigger?.addEventListener('click', function (e) {
+    e.stopPropagation();
+    dropdown?.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!trigger.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+</script>

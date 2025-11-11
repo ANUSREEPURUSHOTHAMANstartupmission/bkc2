@@ -1,0 +1,71 @@
+---
+const { title } = Astro.props;
+
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+
+const description = "Kerala Startup Mission is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.";
+const url = "https://startupmission.kerala.gov.in/";
+
+---
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Back to Kerala Campaign">
+    <meta name="author" content="Back to Kerala Campaign">
+
+    <title>Back to Kerala Campaign | KSUM</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="/assets/css/elegant-line-icons.css">
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/charitian-icons.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/slick.min.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+    <link rel="stylesheet" href="/assets/css/venobox/venobox.css">
+    <link rel="stylesheet" href="/assets/css/odometer.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <script src="/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" is:inline></script>
+     <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"/>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js" is:inline></script>
+
+</head>
+
+<body class="header-1">
+
+	<slot />
+
+    <!-- jQuery Lib -->
+    <script src="/assets/js/vendor/jquery-3.6.0.min.js" is:inline></script>
+    <script src="/assets/js/vendor/popper.min.js" is:inline></script>
+    <script src="/assets/js/vendor/bootstrap.min.js" is:inline></script>
+    <script src="/assets/js/vendor/waypoints.min.js" is:inline></script>
+    <script src="/assets/js/vendor/slick.min.js" is:inline></script>
+    <script src="/assets/js/vendor/jquery.smoothscroll.min.js" is:inline></script>
+    <script src="/assets/js/vendor/jquery.ajaxchimp.min.js" is:inline></script>
+    <script src="/assets/js/vendor/venobox.min.js" is:inline></script>
+    <script src="/assets/js/vendor/odometer.min.js" is:inline></script>
+    <script src="/assets/js/vendor/jquery.isotope.v3.0.2.js" is:inline></script>
+    <script src="/assets/js/vendor/imagesloaded.pkgd.min.js" is:inline></script>
+    <script src="/assets/js/vendor/wow.min.js" is:inline></script>
+    <script src="/assets/js/volunteer.js" is:inline></script>
+    <script src="/assets/js/main.js" is:inline></script>
+
+</body>
+
+</html>

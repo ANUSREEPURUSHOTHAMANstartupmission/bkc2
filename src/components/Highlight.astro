@@ -1,0 +1,11 @@
+---
+const { title, img, color, delay } = Astro.props;
+---
+<div class="group" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100" data-aos-delay={delay}>
+    <div class:list={[color]} class="rounded-tl-2xl rounded-tr-2xl py-4 px-4 text-lg lg:text-xl text-white font-bold text-center">
+        {title}
+    </div>
+    <div class="overflow-hidden image-anime">
+        <img src={img} alt={title} class="group-hover:scale-125 duration-700">
+    </div>
+</div>

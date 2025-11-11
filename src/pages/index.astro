@@ -1,0 +1,289 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Why from "../components/Why.astro";
+import Whyget from "../components/Whyget.astro";
+
+---
+<Layout>
+<!-- <Navbarbottom client:load></Navbarbottom> -->
+
+
+
+    <header class="header header-one">
+        <div class="top-header-one top-bar">
+            <div class="container">
+                <div class="top-bar-inner">
+                    <div class="top-left">
+                        <ul>
+                            <li>Call us Today: <a href="tel:+1234567890">08047180470</a></li>
+                            <li>Email: <a href="mailto:info@startupmission.in">info@startupmission.in</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-right">
+                        <ul class="top-social">
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.top-bar -->
+        <div class="primary-header-one primary-header">
+            <div class="container">
+                <div class="primary-header-inner">
+                    <div class="header-logo">
+                        <a href="/">
+                            <img src="/img/logo.svg" class="w-24" alt="Logo" />
+                        </a>
+                    </div><!-- /.header-logo -->
+                    <div class="header-menu-wrap">
+                        <ul class="dl-menu">
+                            <li><a href="/" class="page-scroll">Home</a>
+                            </li>
+                            <li><a href="/#about" class="page-scroll">About</a>
+                            </li>
+                            <li><a href="/#objectives" class="page-scroll">Objectives</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.header-menu-wrap -->
+                    <div class="header-right">
+                        <a class="default-btn" href="https://zfrmz.com/GEjBruoVUTqyChaW3DPz" target="_blank">Apply Now<span></span></a>
+                        <div class="mobile-menu-icon">
+                            <div class="burger-menu">
+                                <div class="line-menu line-half first-line"></div>
+                                <div class="line-menu"></div>
+                                <div class="line-menu line-half last-line"></div>
+                            </div>
+                        </div>
+                    </div><!-- /.header-right -->
+                </div><!-- /.primary-header-one-inner -->
+            </div>
+        </div><!-- /.primary-header-one -->
+    </header><!-- /.header-one -->
+
+   
+    <div id="main-slider" class="dl-slider">
+        <div class="single-slide">
+            <div class="bg-img kenburns-top-right bg-bottom" style="background-image: url(/img/18436.svg);"></div>
+            <div class="overlay"></div>
+            <div class="slider-content-wrap d-flex align-items-center text-left">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="dl-caption medium">
+                            <!-- <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" data-delay="1s">തിരികെ</div>
+                            </div> -->
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-bottom" >Back to Kerala <br>Campaign</div>
+                            </div>
+                        </div>
+                        <div class="dl-caption small">
+                            <div class="inner-layer">
+                                <div class="text-white md:max-w-4xl" data-animation="fade-in-bottom">
+                                    Connecting Malayali professionals worldwide with new opportunities in Kerala’s growing tech and innovation ecosystem. Join the movement to return, rebuild, and reimagine Kerala as a hub for global capability centres and startups. Be part of Kerala’s transformation into a global tech hub — contribute your skills, experience, and leadership to power the state’s next wave of growth.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dl-btn-group">
+                            <div class="inner-layer">
+                                <a href="/#about" class="page-scroll  default-btn" data-animation="fade-in-bottom">Learn More<span></span><i class="arrow_right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div><!-- slider-section -->
+
+    <section class="about-section padding" id="about">
+        <div class="container">
+            <div class="about-wrap row d-flex align-items-center">
+                <div class="col-md-6 sm-padding">
+                    <div class="section-heading text-left text-black">
+                        <h2>തിരികെ</h2>
+                        <p class="text-black">
+                            Kerala has consistently produced high-quality technology professionals who have migrated across India and abroad in search of better opportunities. With the state now witnessing accelerated growth in the knowledge ecosystem and increasing interest from global capability centres (GCCs) to explore Kerala as a viable destination, there is a need to showcase not just the availability of fresher talent but also the presence of experienced professionals.
+                        </p>
+                        <p class="text-black">
+                            While universities supply a steady stream of young graduates, companies are equally concerned about finding mid- to senior-level professionals who can drive technology, operations, and strategy. Addressing this gap is critical to position Kerala as a competitive hub for GCCs and IT firms.
+                        </p>
+                    </div><!-- /.section-heading -->
+                    <a href="https://zfrmz.com/GEjBruoVUTqyChaW3DPz" target="_blank" class="default-btn">Apply Now<span></span></a>
+                </div>
+                <div class="col-md-6 sm-padding">
+                    <div class="about-img">
+                        <img src="/img/bkc.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- ./ about-section -->
+
+   
+
+    <section class="video-section bd-bottom">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 custom">
+                    <div class="video-btn text-center">
+                        <div class="play-btn">
+                            <a href="https://www.youtube.com/watch?v=RQu7jpcNUWI" class="img-popup" data-autoplay="true" data-vbtype="video"><i class="fas fa-play"></i></a>
+                            <div class="ripple"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 no-padding">
+                    <div class="video-wrap">
+                        <div class="section-heading mb-6">
+                            <h2>Problem Statement</h2>
+                            <p class="pt-3">
+                                Talent availability is a crucial factor for companies setting up GCCs, Startups,  as well as for companies considering expansion plans. While Kerala can guarantee an abundant pool of fresher talent, a lack of visibility on the lateral and leadership talent pool makes investors hesitant and raises concerns for companies evaluating Kerala as a destination: 
+                            </p>
+                            <p class="pt-4">
+                                “How do we secure experienced talent if we set up operations here?” The challenge is: How do we provide confidence to new entrants and existing investors about the availability of experienced professionals in Kerala?
+                            </p>
+                        </div><!-- /.section-heading -->
+                        <a href="https://zfrmz.com/GEjBruoVUTqyChaW3DPz" target="_blank" class="default-btn">Apply Now<span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- ./ video-secion -->
+
+    <section class="service-section bg-grey padding" id="objectives">
+        <div class="container">
+            <div class="section-heading mb-8 text-center">
+                  <h2>Objective</h2>
+                <p>
+                    The Return to Kerala campaign seeks to create a structured database of knowldge professionals originally from Kerala who are open to returning if suitable opportunities arise. This database will:
+                </p>
+            </div><!-- /.section-heading -->
+            <div class="service-wrap grid md:grid-cols-4 grid-cols-2 gap-4 h-auto">
+                <div class=" h-full">
+                    <div class="service-box text-center h-full">
+                        <span></span>
+                        <div class="service-content">
+                            <i class="cht cht-charity-1"></i>
+                            <p class="pt-4">
+                                Serve as a reference point for prospective investors and GCCs.
+                            </p>
+                            
+                        </div>
+                        <div class="service-icon">
+                            <i class="cht cht-charity-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" h-full">
+                    <div class="service-box text-center h-full">
+                        <span></span>
+                        <div class="service-content">
+                            <i class="cht cht-donation-13"></i>
+                            
+                            <p class="pt-4">
+                                Highlight the availability of experienced professionals across domains and levels.
+                            </p>
+                            
+                        </div>
+                        <div class="service-icon icon-2">
+                            <i class="cht cht-donation-13"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-full">
+                    <div class="service-box text-center h-full">
+                        <span></span>
+                        <div class="service-content">
+                            <i class="cht cht-charity-6"></i>
+                            <p class="pt-4">
+                                Bridge the information gap between companies looking for talent and professionals willing to return.
+
+                            </p>
+                            
+                        </div>
+                        <div class="service-icon icon-3">
+                            <i class="cht cht-charity-6"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-full">
+                    <div class="service-box text-center h-full">
+                        <span></span>
+                        <div class="service-content">
+                            <i class="cht cht-charity-12"></i>
+                            <p class="pt-4">
+                                Send a strong messaging to malayalis across the world that Kerala is inviting them back to their  homeland
+
+                            </p>
+                            
+                        </div>
+                        <div class="service-icon icon-4">
+                            <i class="cht cht-charity-12"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- ./service-section -->
+
+   
+
+   
+
+    <footer class="footer-section text-center">
+        <div class="container">
+            <p>© Copyright <span id="currentYear"></span>Kerala Startup Mission</p>
+        </div>
+    </footer><!-- /.footer-section -->
+
+    <div id="scrollup">
+        <button id="scroll-top" class="scroll-to-top"><i class="ti-angle-up"></i></button>
+    </div>
+
+
+<script is:inline>
+  document.querySelectorAll("a.page-scroll").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = anchor.getAttribute("href");
+      const targetId = href.replace(/^\/?#/, "");
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        e.preventDefault();
+
+        targetElement.scrollIntoView({ behavior: "smooth" });
+
+        history.replaceState(null, null, window.location.pathname);
+      }
+    });
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetId = hash.replace("#", "");
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+          history.replaceState(null, null, window.location.pathname);
+        }, 100);
+      }
+    }
+  });
+</script>
+
+
+
+
+</Layout>
+
