@@ -7,14 +7,14 @@ import Navbarbottom from "../components/Navbar.svelte";
 import Tracks from "../components/Tracks.astro";
 import Why from "../components/Why.astro";
 import Whyget from "../components/Whyget.astro";
+import HomeSection from "../components/Home.astro";
 
 ---
 <Layout>
 <!-- <Navbarbottom client:load></Navbarbottom> -->
+  
 
-
-
-    <header class="header header-one">
+ <header class="header header-one">
         <div class="top-header-one top-bar">
             <div class="container">
                 <div class="top-bar-inner">
@@ -65,10 +65,15 @@ import Whyget from "../components/Whyget.astro";
                 </div><!-- /.primary-header-one-inner -->
             </div>
         </div><!-- /.primary-header-one -->
-    </header><!-- /.header-one -->
+    </header>
+<HomeSection />
+
+
 
    
-    <div id="main-slider" class="dl-slider">
+
+   
+    <div id="main-slider" class="dl-slider hidden">
         <div class="single-slide">
             <div class="bg-img kenburns-top-right bg-bottom" style="background-image: url(/img/18436.svg);"></div>
             <div class="overlay"></div>
@@ -102,9 +107,9 @@ import Whyget from "../components/Whyget.astro";
             </div>
         </div>
        
-    </div><!-- slider-section -->
+    </div>
 
-    <section class="about-section padding" id="about">
+    <section class="about-section padding"  id="about">
         <div class="container">
             <div class="about-wrap row d-flex align-items-center">
                 <div class="col-md-6 sm-padding">

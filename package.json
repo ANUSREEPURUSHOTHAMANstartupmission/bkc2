@@ -21,7 +21,10 @@
   "dependencies": {
     "@nanostores/preact": "^0.5.2",
     "flowbite": "^2.4.1",
+    "gsap": "^3.13.0",
     "swiper": "^11.2.6",
-    "tailwindcss-scoped-groups": "^2.0.0"
+    "tailwindcss-scoped-groups": "^2.0.0",
+    "three": "^0.119.1",
+    "three-gltf-loader": "^1.111.0"
   }
 }
