@@ -32,9 +32,7 @@
       padding-left: 5px;
       padding-right: 10px;
       margin-right: 10px;
-      @include my_bp(md) {
-        padding-left: 80px;
-      }
+     
       p {
         line-height: 1.2;
         font-size: .9rem;
@@ -119,19 +117,14 @@
     text-align: center;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
     color: white;
-    padding: 10px;
     min-height: 100vh;
     padding-top: 60px;
     padding-bottom: 60px;
-    @include my_bp(md) {
-      width: 50%;
-      padding: 10px;
-      padding-left: 30px;
-    }
+    
   }
   #readmore-content {
     display: none;
