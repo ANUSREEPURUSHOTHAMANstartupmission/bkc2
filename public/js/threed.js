@@ -45,7 +45,7 @@ function init() {
 
   //Load Model
   const loader = new GLTFLoader();
-  loader.load("../../static/boeing_787/scene.gltf", function(gltf) {
+  loader.load("../../static/boeing/scene.gltf", function(gltf) {
     container.classList.remove("loading");
     scene.add(gltf.scene);
     house = gltf.scene.children[0];
